@@ -13,12 +13,107 @@ type="text/css" href="index.css"> </head>
 
 <div id = "content">
   
- <p>I am a masters student at Carnegie Mellon University, Information Networking Institute since 2014. My interests span information security, digital forensics, incident response and network security.
- I am advised by professor <a href="https://www.andrew.cmu.edu/user/liminjia/"> Limin Jia</a>.</p>
+ <p>I am an information security professional specializing in digital forensics, incident response and network security. I love solving security challenges at scale.
+I graduated from Carnegie Mellon University with Masters in Information Security in 2016. In addition, I received a certificate for completing the Cyber Forensics and Incident Reponse track from the <a href="https://www.cert.org">CERT division at CMU</a>. I was advised by professor <a href="https://www.andrew.cmu.edu/user/liminjia/"> Limin Jia</a>.</p>
+
+<h2>Industry Experience</h2>
+<ul>
+<li><b>Security Paranoid at Yahoo! (May 2016 - Present) </b><br/>Responsible for Track, Search and Rescue (TSR), which involves tracking intruders on the network using modern and experimental techniques at scale, conducting forensic analysis on hosts, handling on-call rotation for incident response and rescuing host and systems to restore expected/normal operations.</br>
+</br>
+<li><b>Intern II Technical - Paranoids at Yahoo! (May 2015 - Aug 2015) </b><br/>Responsible for the following with Yahoo's security team - paranoids:- </br>
+</br>
+1) Aggregate all enterprise logs in a centralized location </br>
+2) Develop intrusion detection mechanisms by automating analysis on the collected logs which have millions of events</br>
+</br>
+Skills Gained and/or Developed:</br>
+Big data technologies like Hadoop, Hive and Oozie, Bash Scripting, Python, Java, Splunk API</li></br>
+<li><b>Software Engineer at Honeywell (July 2013 - July 2014) </b><br/>As part of digital video manager team which develops IP based security products (video management surveillance systems), my primary job function was to develop C++ components that aid in integration of new cameras from different vendors and Honeywell digital video manager system.</li>
+</br><li><b>Intern at Honeywell (Jan 2013 - July 2013)</b><br/> Implemented information security modules (DPAPI, RSA, AES) in C# to facilitate secure communication between software and hardware (EBI Server and EBI client) components involved in a high profile security project for Honeywell access control systems</li>
+</br><li><b>Trainee at BSNL (May 2011 - June 2011)</b><br/>Grasped the implementation of Telecom networks, principles of data transmission, signaling, digital switching, fiber optic (SDH and DWDM), broadband and NIB layouts, Intelligent Networks along with GSM and CDMA technologies</li>
+</ul>
   
- <h2>Education</h2> <ul> <li> MS student in Information Security, <a href="http://www.cmu.edu">Carnegie Mellon University</a></li>
+ <h2>Education</h2> <ul> <li> M.S. in Information Security, <a href="http://www.cmu.edu">Carnegie Mellon University</a></li>
      <li> B.E. in Computer Science &amp; Engineering, <a
      href="http://www.manipal.edu">Manipal Institute of Technology</a></li> </ul>
+
+<h2>Projects</h2> 
+<ul> 
+  <li> <b>Disk Forensics</b><br/>
+        Forensically analyzed a suspect's hard drive for evidence relating to an attack plan. Recovered graphic image files by file carving, user accounts, thumbnail databases, analyzed MSN and IRC chat logs, internet history and cookie information and decrypted encrypted evidence. Correlated gathered evidence to create a timeline of events. Created a professional forensic report outlining all findings and evidence</li>
+  
+<br/><li> <b>Memory Forensics</b><br/>
+        Analyzed a memory dump and IR data of a compromised windows web server running IIS. Leveraged volatility and its plugins to gather information about processes including potential rootkits, associated files and handles, network activity and suspicious connections. Detailed out findings in a report.</li>
+  
+
+  <br/><li> <b>Investigation of an enterprise breach</b><br/>
+        Conducted full scale forensic analysis in a team of 2 as part of a multi-week multi-phase exercise related to an enterprise breach. This exercise was simulated using a scenario with evidence handed out every week with a set of questions to be answered based on it. The investigation involved analyzing network capture using wireshark, filtering out suspicious connections, tracking lateral movement of attackers, conducting disk analysis of compromised systems, creating super timeline to correlate events and cracking truecrypt passwords based on memory dump. As part of deliverables, documented entire investigation methodology and provided remediation steps to prevent future breaches and to harden overall security.  </li>
+
+        <br/><li> <b>Data Mining in Security</b><br/>
+        Leveraged PCA (Principal Component Analysis) using RapidMiner software to filter out interesting events in a linux firewall log consisting of over 300,000 events. The steps involved included parsing the log file using python to get field information and correct formatting errors, normalizing the field values, feeding the CSV into RapidMiner to get important components based on columns parsed and then looking at outliers to determine potential violations. </li>
+   
+   <br/><li> <b>Static Taint Analysis for App Sets in Android</b><br/>
+         Contributed to DIDFAIL project (Droid Intent Data Flow Analysis for Information Leakage, the CERT static taint analyzer for sets of Android apps). Added functionality to track taint propagated through content providers. The project is open source and is funded by the United States Department of Defense with Carnegie Mellon University's Software Engineering Institute.</li>
+
+   <br/><li> <b>Reverse engineering network access control policies on software defined networks</b><br/>
+         It is a research based project aimed at inferring firewall policies on a given SDN network. We experimented with random probing algorithm and smart probing algorithm which made use of machine learning (SVM classifier) to determine network access control policy. We also determined the effectiveness of the above algorithms in python and created a project report detailing theory, implementation and results of our research.</li>
+
+  <br/><li> <b>Information Assurance Exercise</b><br/>
+      Implemented information assurance principles on a vulnerable virtual company network which included
+hardening servers, defending and responding to live injected attacks to ensure uptime of critical services on the network</li>
+
+     <br/><li> <b>IPv6 Security</b><br/>
+      Created a network scenario as a proof of concept to leverage IPv6 in order to compromise a windows server machine using Armitage(Metasploit) running on Kali Linux</li>
+
+<br/><li> <b>Buffer Overflow Exploitation</b><br/>
+      Exploited buffer overflow vulnerability in C by writing shell code to change the runtime behavior of various programs (standalone, client-server) with and without ASLR protection</li>
+
+     <br/><li> <b>Stateful Firewall using Click</b><br/>
+    Built a simple stateful firewall using the modular software router Click which can be used for fast prototyping of routing protocols. Network traffic is inspected against a policy file and decisions are made by the firewall.</li>
+    
+      <br/><li> <b>Control-Plane DoS Attack on SDN</b><br/>
+      Induced DOS attack by sending random SYN packets to a switch connected to a SDN controller in mininet. The switch was not able to find the matching handling rules and thus forwarded the packet to the controller, thereby flooding it with requests which saturated the SDN control plane.</li>
+    
+      <br/><li> <b>Dynamic Taint Tracking</b><br/>
+       Implemented a dynamic taint checker for a programming language called SIMPLE (subset of C). The taint checker ensured that no value derived from a secret is ever printed. Developed several test cases that demonstrate that the checker worked correctly.</li>
+
+  <br/><li> <b>Snort and BGP</b><br/>
+    Gained first hand experience with running snort on network traffic capture files and detecting alerts. Wrote simple custom snort rules to detect a sample worm.
+    Analyzed BGP update data using route_btoa tool and plotted graphs depicting BGP route announcements and withdrawal messages at the time slammer worm was launched.</li>
+
+     <br/><li> <b>Coverity</b><br/>
+    Wrote custom static analysis checkers using the Coverity API to enforce desired program properties. Checkers detected usage of unsafe functions in C, modification of random variables, off-by-one and buffer overflow errors and negative shift values.</li>
+
+<br/><li> <b>Web Security Lab</b><br/>
+      Gained hands on experience on various prominent web application attacks such as SQL injection, XSS, CSRF and Timing Attacks. Documented each attack, clearly explaining the vulnerability and how the exploit works.</li>
+
+      <br/><li> <b>Verification of security properties using SPARK</b><br/>
+      Used the SPARK verification tools to explore verification of security properties. Added preconditions and postconditions to existing ADA functions to enforce desired properties. </li>
+
+<br/><li> <b>Digital Steganography</b><br/>
+      Implemented and optimized the runtime of the algorithm described in the research paper titled &quot;Digital Steganography for ASCII Text Documents&quot; using C</li>
+
+<br/><li> <b>Fireconfig</b><br/>
+      A front end for the linux firewall with basic and advanced filtering features such as creating and modifying custom chains. Monitoring support to view firewall rules as well as active connections simultaneously is included. Incorportes features such as port scanning, information on IP, whois and reverse lookup.</li>
+
+<br/><li> <b>Mobremote</b><br/>
+      A secure, cost effective and flexible remote control system that operated via sms service for performing day to day trivial tasks on one's PC.</li>
+    
+</ul>
+
+<h2>Certifications</h2>
+<ul>
+<li>Cyber Forensics and Incident Response, CERT Division at the Software Engineering Institute, May 2016 - Present</li>  
+<li>Certified Information Security Expert Innobuzz, License 30530, June 2013 - June 2016</li>
+<li>Information Security Awareness [Master] Information Technology Association Of America &amp; Brainbench, February 2015 - February 2018</li>
+<li>Internet Security, Brainbench, December 2011 - December 2014</li>
+<li>Microsoft Certified Professional, License C074-9341, From July 2010</li>
+<li>Microsoft Certified Technology Specialist, License D418-5997, From July 2011</li>
+<li>Microsoft Certified Desktop Support Technician, License C074-9342, From December 2010</li>
+<li>MS Windows XP Desktop Administration, Brainbench, December 2011 - December 2014</li>
+<li>MS Windows Vista Desktop Administration [Master], Brainbench, December 2011- December 2014</li>
+<li>Green Belt Design for Six Sigma, Honeywell, From June 2014</li>
+</ul> 
+
 
  <h2>Courses</h2>
    <ul>
@@ -57,93 +152,14 @@ type="text/css" href="index.css"> </head>
      href="http://ini740.com/F14/">14-740</a>) by Bill Nace, Fall 2014</li>
 </ul> 
 
-
-<h2>Industry Experience</h2>
-<ul>
-<li><b>Intern II Technical - Paranoids at Yahoo! (May 2015 - Aug 2015) </b><br/>Responsible for the following with Yahoo's security team - paranoids:- </br>
-</br>
-1) Aggregate all enterprise logs in a centralized location </br>
-2) Develop intrusion detection mechanisms by automating analysis on the collected logs which have millions of events</br>
-</br>
-Skills Gained and/or Developed:</br>
-Big data technologies like Hadoop, Hive and Oozie, Bash Scripting, Python, Java, Splunk API</li></br>
-<li><b>Software Engineer at Honeywell (July 2013 - July 2014) </b><br/>As part of digital video manager team which develops IP based security products (video management surveillance systems), my primary job function was to develop C++ components that aid in integration of new cameras from different vendors and Honeywell digital video manager system.</li>
-</br><li><b>Intern at Honeywell (Jan 2013 - July 2013)</b><br/> Implemented information security modules (DPAPI, RSA, AES) in C# to facilitate secure communication between software and hardware (EBI Server and EBI client) components involved in a high profile security project for Honeywell access control systems</li>
-</br><li><b>Trainee at BSNL (May 2011 - June 2011)</b><br/>Grasped the implementation of Telecom networks, principles of data transmission, signaling, digital switching, fiber optic (SDH and DWDM), broadband and NIB layouts, Intelligent Networks along with GSM and CDMA technologies</li>
-</ul>
-
-<h2>Projects</h2> 
-<ul> 
-	<li> <b>Forensic Case Investigation</b><br/>
-	      Forensically analyzed a suspect's hard drive for evidence relating to an attack plan. Recovered graphic image files by file carving, user accounts, thumbnail databases, analyzed MSN and IRC chat logs, internet history and cookie information and decrypted encrypted evidence. Correlated gathered evidence to create a timeline of events. Created a professional forensic report outlining all findings and evidence</li>
-	
-	<br/><li> <b>Information Assurance Exercise</b><br/>
-      Implemented information assurance principles on a vulnerable virtual company network which included
-hardening servers, defending and responding to live injected attacks to ensure uptime of critical services on the network</li>
-     
-	 <br/><li> <b>Reverse engineering network access control policies on software defined networks</b><br/>
-	       It is a research based project aimed at inferring firewall policies on a given SDN network. We experimented with random probing algorithm and smart probing algorithm which made use of machine learning (SVM classifier) to determine network access control policy. We also determined the effectiveness of the above algorithms in python and created a project report detailing theory, implementation and results of our research.</li>
-	 
-     <br/><li> <b>IPv6 Security</b><br/>
-      Created a network scenario as a proof of concept to leverage IPv6 in order to compromise a windows server machine using Armitage(Metasploit) running on Kali Linux</li>
-
-<br/><li> <b>Buffer Overflow Exploitation</b><br/>
-      Exploited buffer overflow vulnerability in C by writing shell code to change the runtime behavior of various programs (standalone, client-server) with and without ASLR protection</li>
-
-     <br/><li> <b>Stateful Firewall using Click</b><br/>
-	  Built a simple stateful firewall using the modular software router Click which can be used for fast prototyping of routing protocols. Network traffic is inspected against a policy file and decisions are made by the firewall.</li>
-	  
-      <br/><li> <b>Control-Plane DoS Attack on SDN</b><br/>
-      Induced DOS attack by sending random SYN packets to a switch connected to a SDN controller in mininet. The switch was not able to find the matching handling rules and thus forwarded the packet to the controller, thereby flooding it with requests which saturated the SDN control plane.</li>
-	  
-      <br/><li> <b>Dynamic Taint Tracking</b><br/>
-       Implemented a dynamic taint checker for a programming language called SIMPLE (subset of C). The taint checker ensured that no value derived from a secret is ever printed. Developed several test cases that demonstrate that the checker worked correctly.</li>
-
-	<br/><li> <b>Snort and BGP</b><br/>
-	  Gained first hand experience with running snort on network traffic capture files and detecting alerts. Wrote simple custom snort rules to detect a sample worm.
-	  Analyzed BGP update data using route_btoa tool and plotted graphs depicting BGP route announcements and withdrawal messages at the time slammer worm was launched.</li>
-
-     <br/><li> <b>Coverity</b><br/>
-	  Wrote custom static analysis checkers using the Coverity API to enforce desired program properties. Checkers detected usage of unsafe functions in C, modification of random variables, off-by-one and buffer overflow errors and negative shift values.</li>
-
-<br/><li> <b>Web Security Lab</b><br/>
-      Gained hands on experience on various prominent web application attacks such as SQL injection, XSS, CSRF and Timing Attacks. Documented each attack, clearly explaining the vulnerability and how the exploit works.</li>
-
-      <br/><li> <b>Verification of security properties using SPARK</b><br/>
-      Used the SPARK verification tools to explore verification of security properties. Added preconditions and postconditions to existing ADA functions to enforce desired properties. </li>
-
-<br/><li> <b>Digital Steganography</b><br/>
-      Implemented and optimized the runtime of the algorithm described in the research paper titled &quot;Digital Steganography for ASCII Text Documents&quot; using C</li>
-
-<br/><li> <b>Fireconfig</b><br/>
-      A front end for the linux firewall with basic and advanced filtering features such as creating and modifying custom chains. Monitoring support to view firewall rules as well as active connections simultaneously is included. Incorportes features such as port scanning, information on IP, whois and reverse lookup.</li>
-
-<br/><li> <b>Mobremote</b><br/>
-      A secure, cost effective and flexible remote control system that operated via sms service for performing day to day trivial tasks on one's PC.</li>
-    
-</ul>
-
-<h2>Certifications</h2>
-<ul>
-<li>Certified Information Security Expert Innobuzz, License 30530, June 2013 - June 2016</li>
-<li>Information Security Awareness [Master] Information Technology Association Of America &amp; Brainbench, February 2015 - February 2018</li>
-<li>Internet Security, Brainbench, December 2011 - December 2014</li>
-<li>Microsoft Certified Professional, License C074-9341, From July 2010</li>
-<li>Microsoft Certified Technology Specialist, License D418-5997, From July 2011</li>
-<li>Microsoft Certified Desktop Support Technician, License C074-9342, From December 2010</li>
-<li>MS Windows XP Desktop Administration, Brainbench, December 2011 - December 2014</li>
-<li>MS Windows Vista Desktop Administration [Master], Brainbench, December 2011- December 2014</li>
-<li>Green Belt Design for Six Sigma, Honeywell, From June 2014</li>
-</ul> 
-
 <h2>Honors and Awards</h2>
 <ul>
 <li><b>Merit Scholarship</b><br/>Awarded a merit scholarship by Carnegie Mellon University for my information security degree program.</li>
 <li><b>Additional Honor</b><br/>Represented India (Team of 3) at SEARCC International Student Software Competition (ISSC) 2007, Bangkok, Thailand.</li>
 </ul> 
 
-<h2>Contact</h2> <p class="address"> Carnegie Mellon University<br \> 5000
- Forbes Avenue<br \> Pittsburgh, PA 15213 <br \><div style="float:left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email: kdwivedi [AT] cmu [DOT] edu</div> <br \>
+<h2>Contact</h2>
+Email: <a href="http://www.google.com/recaptcha/mailhide/d?k=01bgJRXr0EbZyg5V9MqyVSxg==&amp;c=XH9oItIeoR-M5MGwl8au7STPpQXke9QzOv4j5qx3RWc=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\x3d01bgJRXr0EbZyg5V9MqyVSxg\x3d\x3d\x26c\x3dXH9oItIeoR-M5MGwl8au7STPpQXke9QzOv4j5qx3RWc\x3d', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">k...</a>@live.com</div> <br \>
  </p>
 
 <h2>External Links</h2>
